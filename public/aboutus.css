@@ -518,9 +518,6 @@ input[type="submit"] {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .nav-bar ul li a{
-    font-size: 12px;
-  }
 }
 
 @media(min-width:1200px) {
