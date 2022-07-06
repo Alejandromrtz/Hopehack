@@ -1,5 +1,5 @@
 const apiData = {
-    url: `https://api.schooldigger.com/v2.0/autocomplete/schools?q=Meadowcreek&returnCount=10&appID=7b6332bf&appKey=55a9490dadd2e8a22422b901cf1ced67`,
+    url: `https://api.schooldigger.com/v2.0/autocomplete/schools?q=Gwinnett&qSearchCityStateName=true&appID=7b6332bf&appKey=55a9490dadd2e8a22422b901cf1ced67`,
     type: "Schools",
     id: "1",
 }
@@ -20,7 +20,7 @@ const apiUrl = `${url}${type}/${id}`;
         try {
             let searchTerm = document.getElementById("school-searching").value;
             const schools = await axios.get(
-                `https://api.schooldigger.com/v2.0/autocomplete/schools?q=${searchTerm}&returnCount=4&appID=7b6332bf&appKey=55a9490dadd2e8a22422b901cf1ced67`
+                `https://api.schooldigger.com/v2.0/autocomplete/schools?q=${searchTerm}&returnCount=6&appID=7b6332bf&appKey=55a9490dadd2e8a22422b901cf1ced67`
             );
             // console.log(schools);
             // console.log(schools.data.schoolMatches);

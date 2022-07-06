@@ -5,7 +5,7 @@ const myChart = new Chart(ctx, {
         labels: ['Ardrey Kell High School', 'Providence High School', 'Myers Park High School', 'Phillip O. Berry Academy of Technology', 'South Mecklenburg High School', 'Meadowcreek High School'],
         datasets: [{
             label: 'School Ratings in Charlotte',
-            data: [10, 10, 8, 6, 9],
+            data: [10, 10, 8, 6, 9, 10],
             backgroundColor: 'transparent',
             borderColor: 'blue',
             borderWidth: 4
