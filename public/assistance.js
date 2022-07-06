@@ -34,8 +34,8 @@ const apiUrl = `${url}${type}/${id}`;
 
             document.getElementById('alertBox').innerHTML =
                 `
-                <div class="alert alert-danger" role="alert">
-                    A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                <div class="alert alert-danger m-5" role="alert">
+                    Please Enter Valid Information (i.e : Gwinnett, Virginia, Austin)
                 </div>
                 `
         }
@@ -68,7 +68,7 @@ const apiUrl = `${url}${type}/${id}`;
             if(list.length > 0) {
                 document.getElementById('alertBox').innerHTML =
                 `
-                <div class="alert alert-success" role="alert">
+                <div class="alert alert-success m-5" role="alert">
                     Success! Please Check Schools Tab for more information.
                 </div>
                 `
@@ -76,28 +76,5 @@ const apiUrl = `${url}${type}/${id}`;
     }
     
 
-
-const ctx = document.getElementById('canvas').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Good Teachers', 'Curricuium/Academics', 'School Safetly', 'Test Scores', 'Academic Grwoth Rates', 'Distance From Our Home', 'Extracurricular Activities', 'Opinions Of Other Parents', 'Disipline-Enforced', 'Cleaniness', 'Special Education', 'High Graudation Rates'],
-        datasets: [{
-            label: 'School Ratings in Charlotte',
-            data: [ 76, 68, 58, 43, 36, 29, 27, 27, 24, 21, 18, 14],
-            backgroundColor: 'transparent',
-            borderColor: 'blue',
-            borderWidth: 4
-        }]
-    },
-
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
 
 

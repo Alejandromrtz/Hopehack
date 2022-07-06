@@ -28,10 +28,11 @@ app.post("/contact", (req, res) => {
         message: req.body.message
     });
     newContact.save();
-    res.redirect('/contact');
+    res.redirect('/');    
 })
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/pics"));
 
 
 //route
@@ -61,4 +62,6 @@ app.get('/contact', (req, res) => {
 // app.use('/users', userRouter)
 
 
-app.listen(3000); //telling to listen on port 3000
+app.listen(3000, () => {
+    console.log('Port ')
+}); //telling to listen on port 3000

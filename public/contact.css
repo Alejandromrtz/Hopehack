@@ -20,19 +20,35 @@ header {
 }
 
 #logo {
-  margin-left: 20px;
   max-width: 50%;
-  padding: 10px;
+  margin-left: 20px;
+
+}
+#logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#logo-wrapper a{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav-bar {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -54,7 +70,7 @@ li a:hover {
 
 .hero-image {
   background-image: url(pics/bus.jpeg);
-  height: 13vh;
+  height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pics/bus.jpeg");
@@ -65,6 +81,10 @@ li a:hover {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
 }
 
 
@@ -72,9 +92,9 @@ form {
   max-width: 550px;
   width: 90%;
   background: #D9D9D9;
-  margin: 13vh auto 0 auto;
+  margin: 10vh auto 0 auto;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 17vh;
 }
@@ -108,6 +128,7 @@ textarea {
   resize: none;
   border: none;
   border-bottom: 1px solid rgb(11, 11, 11);
+  border-radius: 3px;
 
 }
 
@@ -182,7 +203,7 @@ button {
   color: inherit;
 }
 
-.footer-responsive .footer-company-name {
+.footer-company-name {
   color: #8f9296;
   font-size: 14px;
   font-weight: normal;
@@ -273,26 +294,121 @@ button {
 .footer-responsive .footer-icons a:hover {
   background-color: steelblue;
   border: 2px solid steelblue;
-
 }
 
 .footer-links a:hover {
   color: steelblue;
 }
 
-@media(max-width:880px) {
+.ftr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.415);
+}
+.info, .ftr-img {
+  width: 33.3%;
+}
+.info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 50px 0;
 
-  .footer-responsive .footer-links,
-  .footer-responsive .footer-center,
-  .footer-responsive .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center
-  }
+}
+.info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .address,
-  .phone,
-  .email {
-    margin-left: 0;
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.footer-link {
+  color: white;
+  margin: 20px 0 12px;
+}
+
+.footer-link a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-link a:hover {
+  color: steelblue;
+}
+.info div p {
+  color: white;
+  font: bold 16px san-serif;
+}
+
+.footer-icon a {
+  display: inline-block;
+  width: 37.5px;
+  height: 36.5px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: 2px solid white;
+  border-radius: 50%;
+  /* font-size: 20px; */
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.415);
+}
+
+.footer-icon a:hover{
+  background: steelblue;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.footer-company-name {
+  color: #fff;
+}
+
+
+
+@media(max-width:767px) {
+  .ftr {
+    flex-direction: column;
   }
+  .ftr-img, .footer-icon {
+    padding-bottom: 35px;
+    width: unset;
+  }
+  .hero-text h1 {
+    font-size: 50px;
+  }
+}
+
+@media(min-width:768px) {
+  .ftr {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media(min-width:1200px) {
+  .ftr {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
