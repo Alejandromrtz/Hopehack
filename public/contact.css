@@ -69,8 +69,8 @@ li a:hover {
 /* nav bar ends here */
 
 .hero-image {
-  background-image: url(pics/bus.jpeg);
-  height: 25vh;
+  /* background-image: url(pics/bus.jpeg); */
+  height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pics/bus.jpeg");
@@ -377,7 +377,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 20vh;
 }
 
 .footer-company-name {
